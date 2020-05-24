@@ -20,7 +20,7 @@ Then run application server locally.
 
 By default, the application will run on port 8080.
 
-If the mvn command is not supported on your machine, please install here(https://www.baeldung.com/install-maven-on-windows-linux-mac).
+If the mvn command is not supported on your machine, please install here[https://www.baeldung.com/install-maven-on-windows-linux-mac].
 
 
 ### Setting up the Database (for MacOS only)
@@ -34,7 +34,7 @@ Or use this to run it as a background process:
 
     mongod --config /usr/local/etc/mongod.conf --fork
 
-If MongoDB has yet to be installed on your respective machine, please follow the instructions here(https://docs.mongodb.com/manual/administration/install-community/) to get the mongod process up and running. 
+If MongoDB has yet to be installed on your respective machine, please follow the instructions here[https://docs.mongodb.com/manual/administration/install-community/] to get the mongod process up and running. 
 
 The MongoDB instance is configured to run on port 27017. Please ensure it is not in use before running the application server. You may also modify the port number in com/example/rm/movieDB/config/AppConfig file. 
 
