@@ -99,16 +99,16 @@ The general structure of my code is as follows. It was developed in a modular an
             - config
                 - AppConfig.java
             - db
-                - ImageRepository.java          // methods for database queries specified here
-            - model                         // models to turn JSON requests into readable Java Objects, and vice versa
+                - ImageRepository.java              // methods for database queries specified here
+            - model                                 // models to turn JSON requests into readable Java Objects, and vice versa
                 - ImageDefaultSchema.java
                 - TMDBPersonSchema.java
                 - UserExampleRequest.java 
-            - controller                        // api endpoints declared here
+            - controller                            // api endpoints declared here
                 - ImagesController.java
             - service
                 - MovieImageService.java            // all application logic written here
-                - MovieImageTransformer.java            // used to clean and transform image data
+                - MovieImageTransformer.java        // used to clean and transform image data
                 - URITemplateService.java           // build URI to call TMDB's external API services
 
 ## 3. Further Documentation
