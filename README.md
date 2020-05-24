@@ -99,7 +99,7 @@ The general structure of my code is as follows. It was developed in a modular an
             - config
                 - AppConfig.java
             - db
-                - ImageRepository.java // methods for database queries specified here
+                - ImageRepository.java [//:] <> methods for database queries specified here
             - model // models to turn JSON requests into readable Java Objects, and vice versa
                 - ImageDefaultSchema.java
                 - TMDBPersonSchema.java
@@ -120,6 +120,6 @@ The general structure of my code is as follows. It was developed in a modular an
 Hit endpoint **/api/images/person/all/clean**
 
 ## 4. Future Improvements
-This is by no means a complete work, but simply a demonstration of a simple RESTful API design. Things I could do better include:
+This is by no means a perfect product, but simply a demonstration of a simple RESTful API design. Things I could do better include:
 * Introducing better error logging and exception handling (e.g what happens if a user submits an unsupported query?)
 * Storing API key and key information somewhere more safe! Per open source standards, it's imperative I store them as environment properties and inject them during runtime. 
