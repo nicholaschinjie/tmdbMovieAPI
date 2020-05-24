@@ -124,3 +124,4 @@ Hit endpoint **/api/images/person/all/clean**
 This is by no means a perfect product, but simply a demonstration of a simple RESTful API design. Things I could do better include:
 * Introducing better error logging and exception handling (e.g what happens if a user submits an unsupported query?)
 * Storing API key and key information somewhere more safe! Per open source standards, it's imperative I store them as environment properties and inject them during runtime. 
+* Testcases, lol
