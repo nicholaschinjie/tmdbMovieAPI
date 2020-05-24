@@ -50,10 +50,6 @@ public class ImagesController {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(ImagesController.class);
 	
-	private static final String VERSION = "version";
-	private static final String STATUS = "status";
-	private static final String OK = "OK";
-	
 	@Autowired
 	RestTemplate restTemplate; 
 	
@@ -85,7 +81,6 @@ public class ImagesController {
 	    if (config.getCategory().contentEquals("person")) {
 			ResponseEntity<TMDBPersonSchema> apiresponse = restTemplate.getForEntity(uri, TMDBPersonSchema.class);
 			response = imageService.retrievePhoto(id, apiresponse, config); 
-	//				restTemplate.exchange("https://api.themoviedb.org/3/person/2?api_key=b9e34c17e1f375937c33f3ae43e76a88", HttpMethod.GET, entity, String.class).getBody();
 	    }
 		return ResponseEntity.status(HttpStatus.OK).body(response);
 	}
