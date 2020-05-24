@@ -103,10 +103,15 @@ public class ImagesController {
 	}
 	
 	
-	@RequestMapping("/api/users/person/all")
+	@RequestMapping("/api/images/person/all")
 	public ResponseEntity<Object> searchAll() {
 		List<ImageDefaultSchema> response = imageRepo.findAll();
 		return ResponseEntity.status(HttpStatus.OK).body(response);
+	}
+	
+	@RequestMapping("api/images/person/all/clean")
+	public void clean() {
+		imageRepo.deleteAll();
 	}
 
 	// TODO: IGNORE
