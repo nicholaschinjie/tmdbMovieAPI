@@ -5,24 +5,6 @@ Functional Java project that stores and retrieves image details from The Movie D
 Nicholas Chin Jie (nicholaschin20@gmail.com)
 
 ## 0. Getting Started 
-### Setup Maven on your computer
-Go to the file path directory. 
-
-    cd /{PATH}/tmdbMovieAPI
-
-First install all relevant dependencies for the application to run.
-
-    mvn clean install
-
-Then run application server locally. 
-
-    mvn spring-boot:run
-
-By default, the application will run on port 8080.
-
-If the mvn command is not supported on your machine, please install [here](https://www.baeldung.com/install-maven-on-windows-linux-mac).
-
-
 ### Setting up the Database (for MacOS only)
 I used a MongoDB database instance for data storage. 
 
@@ -37,6 +19,26 @@ Or use this to run it as a background process:
 If MongoDB has yet to be installed on your respective machine, please follow the instructions [here](https://docs.mongodb.com/manual/administration/install-community/) to get the mongod process up and running. 
 
 The MongoDB instance is configured to run on port 27017. Please ensure it is not in use before running the application server. You may also modify the port number in com/example/rm/movieDB/config/AppConfig file. 
+
+### Setup Maven on your computer
+Go to the file path directory. 
+
+    cd /{PATH}/tmdbMovieAPI
+
+Install all relevant dependencies for the application to run.
+
+    mvn clean install
+
+Then run application server locally. 
+
+    mvn spring-boot:run
+
+By default, the application will run on port 8080. Make sure a mongod process is running before starting the server.
+
+If the mvn command is not supported on your machine, please install [here](https://www.baeldung.com/install-maven-on-windows-linux-mac).
+
+
+
 
 
 ## 1. Application Use Case
